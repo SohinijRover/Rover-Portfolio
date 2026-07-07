@@ -15,7 +15,7 @@ export default function Footer() {
     <footer className="relative overflow-hidden bg-dark pt-24 text-white">
       <span
         aria-hidden="true"
-        className="font-display pointer-events-none absolute left-1/2 top-16 w-full -translate-x-1/2 select-none whitespace-nowrap text-center text-[22vw] font-bold leading-none text-white/5 sm:top-20"
+        className="font-display pointer-events-none absolute left-1/2 top-16 w-full -translate-x-1/2 select-none whitespace-nowrap text-center text-[22vw] font-bold leading-none text-orange-500/10 sm:top-20"
       >
         SOHINI
       </span>

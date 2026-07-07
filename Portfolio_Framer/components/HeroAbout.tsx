@@ -214,7 +214,7 @@ export default function HeroAbout() {
         </div>
       </section>
 
-      <motion.div
+      {/* <motion.div
         style={{
           position: "absolute",
           top: base.top,
@@ -238,6 +238,35 @@ export default function HeroAbout() {
             SJ
           </span>
         </div>
+      </motion.div> */}
+      <motion.div
+        style={{
+          position: "absolute",
+          top: base.top,
+          left: base.left,
+          width: base.width,
+          height: base.height,
+          x: imageX,
+          y: imageY,
+          rotateY: imageRotateY,
+          filter: imageFilter,
+          transformStyle: "preserve-3d",
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+        className="z-20 overflow-hidden rounded-[28px] bg-gradient-to-br from-orange-500 via-red-500 to-rose-600 shadow-2xl"
+      >
+        {/* Photo — sits underneath the tint */}
+        <img
+          src="https://i.ibb.co/0VspRR19/dp1.png"
+          alt="Sohini Joarder"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        {/* Gradient wash — keeps the signature warm tint over the photo */}
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-500 via-red-500 to-rose-600 mix-blend-soft-light" />
+        {/* Radial highlight */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.35),transparent_55%)]" />
       </motion.div>
     </div>
   );
